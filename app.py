@@ -80,7 +80,7 @@ def do_predictions(request: schemas.Predictions, db: Session = Depends(get_db)):
 
     prediction = get_model_prediction(model_input)
     updated_db_model = update_model(db_model, prediction)
-    db.add(updated_db_model)
+    db.add(updated_db_model.tolist())
     db.commit()
     db.refresh(updated_db_model)
     return prediction
