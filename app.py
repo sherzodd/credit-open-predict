@@ -24,6 +24,8 @@ def get_db():
         
 @app.get("/")
 def info():
+    db = get_db()
+    db.drop(engine)
     return """It is a ML model made for predicting outcome of clients decision on opening credit account
             To get predictions, please, unput required client data in order: gender, age, marital_status, job_position,
             credit_sum, credit_month, tariff_id, score_shk, education, living_region, monthly_income, credit_count, 
