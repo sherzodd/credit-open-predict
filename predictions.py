@@ -29,7 +29,7 @@ def input_dataframe(
     
     data = [[gender, age, marital_status, job_position, credit_sum, credit_month, tariff_id, score_shk, education, living_region, monthly_income, credit_count, overdue_credit_count]]
     df = pd.DataFrame(data, columns = ['gender','age', 'marital_status', 'job_position', 'credit_sum', 'credit_month', 'tariff_id', 'score_shk', 'education', 'living_region', 'monthly_income', 'credit_count', 'overdue_credit_count'])
-    
+    df["gender"] = (df["gender"] == "M").astype(int)
     return df
 
 
