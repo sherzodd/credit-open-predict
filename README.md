@@ -31,7 +31,7 @@
 
 Некоторые результаты:
 
-![alt text](https://github.com/sherzodd/credit-open-predict/blob/main/image2.png?raw=true)
+![alt text](https://github.com/sherzodd/credit-open-predict/blob/main/image0.png?raw=true)
 
 
-![alt text](https://github.com/sherzodd/credit-open-predict/blob/main/image3.png?raw=true)
+![alt text](https://github.com/sherzodd/credit-open-predict/blob/main/image.png?raw=true)
