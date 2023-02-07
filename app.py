@@ -1,22 +1,22 @@
 from fastapi import FastAPI, Depends
-import schemas
-import models
-from database import engine, SessionLocal
-from sqlalchemy import Session
-from predictions import input_dataframe, get_model_prediction
+# import schemas
+# import models
+# from database import engine, SessionLocal
+# from sqlalchemy import Session
+# from predictions import input_dataframe, get_model_prediction
 
 app = FastAPI()
 
 # models.Base.metadata.create_all(engine)
 
-def get_db():
-    db = SessionLocal()
+# def get_db():
+#     db = SessionLocal()
 
-    try:
-        yield db
+#     try:
+#         yield db
     
-    finally:
-        db.close()
+#     finally:
+#         db.close()
         
         
 @app.get("/")
