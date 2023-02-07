@@ -2,6 +2,7 @@ from fastapi import FastAPI, Depends
 import schemas
 import models
 import pandas as pd
+import numpy as np
 from database import engine, SessionLocal
 from sqlalchemy.orm import Session
 from predictions import input_dataframe
