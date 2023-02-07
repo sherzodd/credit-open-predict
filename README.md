@@ -23,14 +23,14 @@
    "overdue_credit_count":"float",
 }
   
-  ![alt text](https://github.com/sherzodd/credit-open-predict/blob/main/image1.jpg?raw=true)
+  ![alt text](https://github.com/sherzodd/credit-open-predict/blob/main/image1.png?raw=true)
 
 
   
 
 Некоторые результаты:
 
-![alt text](https://github.com/sherzodd/credit-open-predict/blob/main/image2.jpg?raw=true)
+![alt text](https://github.com/sherzodd/credit-open-predict/blob/main/image2.png?raw=true)
 
 
-![alt text](https://github.com/sherzodd/credit-open-predict/blob/main/image3.jpg?raw=true)
+![alt text](https://github.com/sherzodd/credit-open-predict/blob/main/image3.png?raw=true)
