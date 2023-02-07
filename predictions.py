@@ -34,7 +34,7 @@ def input_dataframe(
 
 
 def get_model_prediction(dataframe):
-
+    print(dataframe)
     knn_model = joblib.load('card-pred.joblib')
     predictions = knn_model.predict(dataframe)
     
