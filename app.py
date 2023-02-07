@@ -45,7 +45,7 @@ def do_predictions(request: schemas.Predictions, db: Session = Depends(get_db)):
                                   education=request.education,
                                   living_region=request.living_region,
                                   monthly_income=request.monthly_income,
-                                  credit_count=request.monthly_income,
+                                  credit_count=request.credit_count,
                                   overdue_credit_count=request.overdue_credit_count) #database model
     #Converting input string to numbers
     education_dict = {'ACD': 0, 'GRD': 1, 'PGR': 2, 'SCH': 3, 'UGR': 4}
