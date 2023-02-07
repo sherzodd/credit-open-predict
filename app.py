@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Depends
 import schemas
 import models
+import pandas as pd
 from database import engine, SessionLocal
 from sqlalchemy.orm import Session
 from predictions import input_dataframe
@@ -70,6 +71,12 @@ def do_predictions(request: schemas.Predictions, db: Session = Depends(get_db)):
                                   credit_count=request.monthly_income,
                                   overdue_credit_count=request.overdue_credit_count)
     
+    is_null = pd.isna(model_input)
+    print(is_null.any().any())
+    null_position = np.where(is_null)
+    print(f'NaN value found in row {null_position[0]} and column {null_position[1]}')
+
+
     prediction = get_model_prediction(model_input)
     updated_db_model = update_model(db_model, prediction)
     db.add(updated_db_model)
