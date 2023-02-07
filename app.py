@@ -80,10 +80,11 @@ def do_predictions(request: schemas.Predictions, db: Session = Depends(get_db)):
 
     prediction = get_model_prediction(model_input)
     updated_db_model = update_model(db_model, prediction.tolist()[0])
+    print("passed")
     db.add(updated_db_model)
     db.commit()
     db.refresh(updated_db_model)
-    return prediction
+    return {"prediction": prediction.tolist()[0]}
     
 
 
