@@ -2,7 +2,7 @@ from fastapi import FastAPI, Depends
 import schemas
 import models
 from database import engine, SessionLocal
-from sqlalchemy import Session
+from sqlalchemy.orm import Session
 from predictions import input_dataframe
 from predictions import get_model_prediction
 
