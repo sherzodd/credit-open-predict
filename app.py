@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Depends
-from . import schemas, models
+import schemas
+import models
 from .database import engine, SessionLocal
 from sqlalchemy import Session
 from predictions import input_dataframe, get_model_prediction
