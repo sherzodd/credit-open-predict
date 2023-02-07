@@ -27,8 +27,8 @@ def input_dataframe(
     credit_count,
     overdue_credit_count):
     
-    array = [gender, age, marital_status, job_position, credit_sum, credit_month, tariff_id, score_shk, education, living_region, monthly_income, credit_count, overdue_credit_count]
-    df = pd.DataFrame(array, columns = ['gender','age', 'marital_status', 'job_position', 'credit_sum', 'credit_month', 'tariff_id', 'score_shk', 'education', 'living_region', 'monthly_income', 'credit_count', 'overdue_credit_count'])
+    data = [[gender, age, marital_status, job_position, credit_sum, credit_month, tariff_id, score_shk, education, living_region, monthly_income, credit_count, overdue_credit_count]]
+    df = pd.DataFrame(data, columns = ['gender','age', 'marital_status', 'job_position', 'credit_sum', 'credit_month', 'tariff_id', 'score_shk', 'education', 'living_region', 'monthly_income', 'credit_count', 'overdue_credit_count'])
     
     return df
 
