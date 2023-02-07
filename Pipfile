@@ -16,6 +16,7 @@ pydantic = "*"
 typing = "*"
 sqlalchemy = "*"
 psycopg2-binary = "*"
+gunicorn = "*"
 
 [dev-packages]
 

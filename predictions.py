@@ -7,8 +7,8 @@ from imblearn.over_sampling import RandomOverSampler
 import pandas as pd
 
 
-test= pd.read_csv('credit_test.csv')
-test["gender"] = (test["gender"] == "M").astype(int)
+# test= pd.read_csv('credit_test.csv')
+# test["gender"] = (test["gender"] == "M").astype(int)
 # test = test.dropna()
 # test = test.drop('client_id', axis=1)
 
@@ -23,15 +23,13 @@ test["gender"] = (test["gender"] == "M").astype(int)
 # test["job_position"] = le_job_position.fit_transform(test["job_position"])
 # test['credit_sum'] = test['credit_sum'].apply(lambda x: float(x.replace(',', '.')))
 # test['score_shk'] = test['score_shk'].apply(lambda x: float(x.replace(',', '.')))
-arr = [[0, 30, 1, 12, 16159.0, 10, 1.32, 0.421477, 3, 236, 10000.0, 0.0, 0.0]]
+# arr = [[0, 30, 1, 12, 16159.0, 10, 1.32, 0.421477, 3, 236, 10000.0, 0.0, 0.0]]
 # my_array = np.array(arr)
-df = pd.DataFrame(arr, columns = ['gender','age', 'marital_status', 'job_position', 'credit_sum', 'credit_month', 'tariff_id', 'score_shk', 'education', 'living_region', 'monthly_income', 'credit_count', 'overdue_credit_count'])
+# df = pd.DataFrame(arr, columns = ['gender','age', 'marital_status', 'job_position', 'credit_sum', 'credit_month', 'tariff_id', 'score_shk', 'education', 'living_region', 'monthly_income', 'credit_count', 'overdue_credit_count'])
 
 
 knn_model = joblib.load('card-pred.joblib')
-predictions = knn_model.predict(df)
 
-print(predictions)
 
 
 def input_dataframe(
