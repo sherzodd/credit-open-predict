@@ -6,6 +6,7 @@
   
   
   Параметры:
+  Endpoint URL = https://credit-open-prediction.herokuapp.com/predict
   
   {
    "gender":"str",
