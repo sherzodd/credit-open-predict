@@ -5,6 +5,7 @@ from database import Base
 class Predictions(Base):
     __tablename__ = "predictions"
 
+    id = Column(Integer, primary_key=True, index=True)
     gender = Column(String, index=True)
     age = Column(Integer, index=True)
     marital_status = Column(String, unique=True, index=True)
